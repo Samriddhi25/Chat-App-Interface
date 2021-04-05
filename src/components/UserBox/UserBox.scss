@@ -1,0 +1,43 @@
+@import '../../styling/global','../../styling/style';
+
+.user-name-container {
+    height: fit-content;
+    min-width: 13rem;
+    max-width: fit-content;
+    border-radius: 15px;
+    background-color: map-get($colours , 'tint' );
+    padding: 1rem 1rem;
+
+    .avatar {
+        width: fit-content;
+        margin: auto; 
+    }
+    .info {
+        text-align: center;
+        .main {
+            display: flex;
+            .name {
+                font-weight: bold;
+                font-size: map-get($size, 'body1' );
+            }
+            img {
+                margin: 0 0.45rem;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+        .sub {
+            flex-wrap: wrap;
+        }
+        .toggle {
+            display: flex;
+            width: fit-content;
+            margin: auto; 
+            .toggle-value {
+                font-size: 14px;
+                width: fit-content;
+                margin: auto; 
+            }
+        }
+    }
+}

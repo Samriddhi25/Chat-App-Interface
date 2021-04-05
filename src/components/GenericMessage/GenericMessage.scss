@@ -1,0 +1,117 @@
+@import '../../styling/global','../../styling/style';
+
+.message-box {
+    margin: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    
+    .user {
+    width: fit-content;
+    }
+    .message-info {
+        .message-text {
+            width: fit-content;
+            max-width: 100%;
+            padding: 0.75rem;
+            border-radius: 15px;
+            background-color: map-get($colours , 'white' );
+        }
+    }
+}
+
+.right {
+    width: 70%;
+    float: right;
+    justify-content: flex-end;
+    .user {
+        order: 1;
+    }
+    .message-info {
+        .message-text {
+            margin-right: 0.5rem;
+            color: map-get($colours , 'white' );
+            background-color: map-get($colours , 'dark' );
+        }
+        .message-time {
+            width: fit-content;
+            float: right;
+        }
+    }
+}
+
+.left {
+    width: 70%;
+    float: left;
+    .message-info {
+        .message-text {
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+
+/*
+@import '../../styling/global','../../styling/style';
+
+.message-box {
+    margin: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    .message-content{
+        display: flex;
+        .user {
+        width: fit-content;
+        }
+        .message-info {
+            .message-text {
+                width: fit-content;
+                max-width: 100%;
+                padding: 0.75rem;
+                border-radius: 15px;
+                background-color: map-get($colours , 'white' );
+            }
+        }
+    }
+}
+
+.right {
+    width: 0;
+    .user {
+        order: 1;
+    }
+    .message-content {
+        width: 70%;
+        float: right;
+        .message-info {
+            .message-text {
+                margin-right: 0.5rem;
+                color: map-get($colours , 'white' );
+                background-color: map-get($colours , 'dark' );
+            }
+            .message-time {
+                
+            }
+        }
+    }
+    .empty {
+        width: 30%;
+        float: left;
+    }
+}
+
+.left {
+    .message-content {
+        width: 70%;
+        float: left;
+        .message-info {
+            .message-text {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    .empty {
+        width: 30%;
+        float: right;
+    }
+}
+*/

@@ -1,0 +1,29 @@
+@import '../../styling/global','../../styling/style';
+
+.main-bar {
+    cursor: pointer;
+    width: 100%;
+    min-height: 6rem;
+    .bar {
+        margin: auto;
+        width: .75rem;
+        height: 6rem;
+        border-radius: 15px;
+        background-color: map-get($colours , 'light' );
+    }
+    .circle {
+        margin: 0.5rem auto;
+        width: .75rem;
+        height: .75rem;
+        border-radius: 15px;
+        background-color: map-get($colours , 'light' );
+    }
+    .text {
+        text-align: center;
+        font-size: map-get($size , 'caption' );
+    }
+    .active {
+        background-color: map-get($colours , 'navy' );
+    } 
+    
+}

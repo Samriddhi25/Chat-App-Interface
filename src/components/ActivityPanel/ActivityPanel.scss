@@ -1,0 +1,29 @@
+@import '../../styling/global','../../styling/style';
+
+.activity-panel {
+    width: 15.25rem;
+    background-color: map-get($colours , 'tint' );
+    padding: 0.75rem 0.5rem;
+    border-radius: 15px;
+    
+    .box-activity {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .chart-box {
+        .box-heading {
+            display: flex;
+            padding: 0.5rem;
+            justify-content: space-between;
+            .main {
+                font-weight: bold;
+                font-size: map-get($size , 'headline6' );
+            }
+            .sub {
+                margin: auto 0;
+            }
+        }
+        
+    }
+}

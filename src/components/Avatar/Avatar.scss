@@ -1,0 +1,53 @@
+@import '../../styling/global','../../styling/style';
+
+.large {
+    width: 4rem;
+    height: 4rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(map-get($colours, 'navy'), map-get($colours, 'sky'));
+    span {
+        font-size: map-get($size , 'headline5');
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.small {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-weight: bold;
+    line-height: 2.25rem;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(map-get($colours, 'navy'), map-get($colours, 'sky'));
+    span {
+        font-size: map-get($size , 'subtitle2');
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+    }
+
+}
+
+.notif {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: 0.1rem solid #ffffff;
+    margin: -8px 0 0 70%;
+}
+
+.active{
+    background: map-get($colours , 'green' );
+}
+
+.inactive {
+    background: map-get($colours , 'grey' );
+}

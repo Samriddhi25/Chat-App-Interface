@@ -1,0 +1,33 @@
+@import '../../styling/global','../../styling/style';
+
+.dropdown {
+    position: relative;
+    max-width: 100%;
+    
+    &__list {
+      // opacity: 0;
+      transition: max-height .6s ease-out;
+      // transition: opacity .15s ease-out;
+      max-height: 0;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      
+      &--active {
+        max-height: 14rem;
+        opacity: 1;
+      }
+    }
+    
+    &__list-item {
+      cursor: pointer;
+      list-style: none;    
+      padding: 15px;
+    }
+    
+    &__toggle {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bolder;
+    }
+  }

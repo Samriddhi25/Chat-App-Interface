@@ -1,0 +1,45 @@
+@import '../../styling/global','../../styling/style';
+
+.home-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    .left-container {
+        width: 20%;
+        height: 100%;
+        .block1 {
+            margin: .25rem 1rem;
+        }
+        .block2 {
+            margin: .35rem;
+        }
+    }
+    .middle-container {
+        width: 60%;
+        height: 100%;
+        .block {
+            width: 95%;
+            height: 96%;
+            max-height: 96%;
+            border-radius: 15px;
+            margin: 0.5rem 0;
+            padding: 0 0.75rem 0.5rem 0.75rem;
+            background: map-get($colours , 'tint' );
+            .all-message-box {
+                height: 90%;
+                overflow: scroll;
+                overflow-x: hidden;
+            }
+        }
+    }
+    .right-container {
+        width: 20%;
+        height: 100%;
+        .block1 {
+            margin: .25rem 1rem;
+        }
+        .block2 {
+            margin: .35rem;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+$colours: (
+    'black': #000000,
+    'dark': #001746,
+    'voilet': #03045E,
+    'navy': #023E8A,
+    'star': #0077B6,
+    'blue': #0096C7,
+    'cryan': #00B4D8,
+    'sky': #48CAE4,
+    'light': #90E0EF,
+    'bliss': #ADE8F4,
+    'tint': #CAF0F8,  
+    'white': #ffffff,
+    'green': #00b670,
+    'lightg': #48e4b5,
+    'skyg': #90efe2,
+    'purple': #9800b6,
+    'lightp': #cc58e9,
+    'skyp': #d990ef,
+    'orange': #cc5e04,
+    'lighto': #e99258,
+    'skyo': #efc390,
+    'grey': #aaaaaa
+);
+
+$fontfamily: (
+    'lato': unquote("Lato"),
+    'roboto': unquote("Roboto")
+);
+
+$size: (
+    'headline1': 97px,
+    'headline2': 61px,
+    'headline3': 48px,
+    'headline4': 34px,
+    'headline5': 24px,
+    'headline6': 20px,
+    'body1': 18px,
+    'body2': 14px,
+    'subtitle1': 16px,
+    'subtitle2': 14px,
+    'button': 15px,
+    'overline': 10px,
+    'caption': 12px
+);
+
+// @each $colour, $hex in $colours {
+//     .text-#{$colour} {
+//         color: $hex;
+//     }
+//     .backgroud-#{$colour} {
+//         background-color: $hex;
+//     }
+//     .border-#{$colour} {
+//         border-color: $hex;
+//     }
+// }

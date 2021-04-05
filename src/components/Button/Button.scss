@@ -1,0 +1,31 @@
+@import '../../styling/global','../../styling/style';
+
+.my-button {
+    display: flex;
+    align-items: center;
+    color: map-get($colours , 'white' );
+    background: map-get($colours, 'blue');
+    padding: 0.75rem 1.25rem;
+    font-size: map-get($size , 'button' );
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    img {
+        width: 1.25rem;
+        margin: 0 0.5rem;
+        fill: #fff;
+    }
+    &:hover {
+        cursor: pointer;
+        background: #ffffff;
+        color: map-get($colours, 'blue');
+        border: 1px solid map-get($colours, 'blue');
+        img {
+            filter: invert(59%) sepia(52%) saturate(5355%) hue-rotate(161deg) brightness(86%) contrast(102%);
+        }
+    }
+    .right {
+        order: 1;
+    }
+}
+ 

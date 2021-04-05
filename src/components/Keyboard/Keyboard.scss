@@ -1,0 +1,21 @@
+@import '../../styling/global','../../styling/style';
+
+.keyboard-bg {
+    background: map-get($colours , 'white' );
+    border-radius: 15px;
+    padding: 0.5rem;
+    display: flex;
+    .text-box {
+        width: 100%;
+        padding: 0 0.75rem;
+        .box {
+            width: 98%;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            height: 90%;
+            font-size: 16px;
+            padding: 0 0.5rem;
+            box-shadow: 0.25rem 0.25rem 0.25rem #eee;
+        }
+    }
+}
